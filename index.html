@@ -7,16 +7,27 @@
   <meta name="theme-color" content="#f4ead7">
   <title>姜小樂 Little Joy Ginger</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Use the official brand artwork instead of retyping 姜小樂 in a substitute font. */
+    .brand .brand-logo {
+      width: 92px !important;
+      height: 92px !important;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+    @media (max-width: 700px) {
+      .brand .brand-logo {
+        width: 76px !important;
+        height: 76px !important;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#home" aria-label="姜小樂 Little Joy Ginger 首页">
-        <img src="logo.png" alt="姜小樂 Little Joy Ginger logo">
-        <span class="brand-name">
-          <strong>姜小樂</strong>
-          <small>Little Joy Ginger</small>
-        </span>
+        <img class="brand-logo" src="logo.png" alt="姜小樂 Little Joy Ginger 官方 Logo">
       </a>
       <nav aria-label="网站导航">
         <a href="#story">品牌故事</a>
